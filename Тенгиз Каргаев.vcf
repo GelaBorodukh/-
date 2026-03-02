@@ -1,6 +1,7 @@
 BEGIN:VCARD
-VERSION:3.0
-N:Каргаев;Тенгиз;;;
-FN:Тенгиз Каргаев
-TEL;TYPE=CELL:+79991234567
+VERSION:2.1
+N:Kargaev;Tengiz
+FN:Tengiz Kargaev
+TEL;CELL:+79991234567
+EMAIL:email@mail.ru
 END:VCARD
