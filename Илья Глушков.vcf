@@ -1,11 +1,8 @@
-href="tel:+79187119944"
-   style="display:inline-block;
-          padding:16px 28px;
-          border-radius:14px;
-          background:#000000;
-          color:#ffffff;
-          text-decoration:none;
-          font-size:18px;
-          font-weight:600;
-          font-family:Arial, sans-serif;">
-  Добавить в контакты
+BEGIN:VCARD
+VERSION:2.1
+N;CHARSET=UTF-8:Глушков;Илья
+FN;CHARSET=UTF-8:Илья Глушков
+ORG;CHARSET=UTF-8:FARSHE
+TITLE;CHARSET=UTF-8:Специалист по кадрам
+TEL;CELL:+79187119904
+END:VCARD
