@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Добавить контакт</title>
+<style>
+body{
+font-family:Arial;
+background:#111;
+color:white;
+text-align:center;
+padding-top:80px;
+}
+button{
+padding:18px 40px;
+font-size:18px;
+border:none;
+border-radius:10px;
+background:#ffffff;
+color:#000;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Добавить контакт</h1>
+<p>Нажмите кнопку чтобы сохранить контакт</p>
+
+<button onclick="downloadVCF()">Сохранить контакт</button>
+
+<script>
+function downloadVCF(){
+
+const vcard =
+`BEGIN:VCARD
+VERSION:2.1
+N:Kargaev;Tengiz
+FN:Тенгиз Каргаев
+ORG:FARSHE
+TITLE:Специалист по кадрам
+TEL;CELL:+79187119944
+END:VCARD`;
+
+const blob = new Blob([vcard], {type: "text/vcard"});
+const link = document.createElement("a");
+
+link.href = URL.createObjectURL(blob);
+link.download = "contact.vcf";
+link.click();
+}
+</script>
+
+</body>
+</html>
